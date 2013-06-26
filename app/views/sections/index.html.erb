@@ -1,0 +1,10 @@
+<% provide(:title, 'Sections') %>
+<div class="center hero-unit">
+  <h1>Sections</h1>
+  <% @sections.each do |section| %>
+    <li><h3>
+      <%= section.short_name %>: <%= link_to section.long_name.capitalize , section %></h3>
+    </li>
+  <% end %>
+    
+</div>
