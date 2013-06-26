@@ -26,7 +26,7 @@ describe Section do
   end
 
   describe 'when long_name is too long' do
-    before { @section.long_name = "a" * 21 }
+    before { @section.long_name = "a" * 31 }
     it { should_not be_valid }
   end
 
